@@ -1,4 +1,4 @@
-from flask.ext.login import login_required, login_user, logout_user
+from flask_login import login_required, login_user, logout_user
 from flask.globals import current_app, request
 from flask.helpers import send_from_directory, url_for
 from werkzeug.utils import redirect
@@ -19,7 +19,7 @@ def index():
 @root.route("/login", methods=("POST", "GET"))
 @with_template("login.html")
 def login():
-    pincode = int(request.form.get("pincode", 0)) or None
+    pincode = str(request.form.get("pincode", 0)) or None
     if pincode == current_app.config['PINCODE']:
         login_user(User())
         return redirect(request.form.get("next") or url_for("index.index"))

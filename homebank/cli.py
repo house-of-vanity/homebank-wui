@@ -1,5 +1,5 @@
 from sys import argv
-from flask.ext.script import Server, Manager
+from flask_script import Server, Manager
 
 from homebank.app import make_app
 
@@ -10,7 +10,7 @@ def manage():
 
     manager = Manager(make_app(
         debug='-D' not in argv and '--no-debug' not in argv))
-    manager.add_command("runserver", Server(host="localhost", port=8080))
+    manager.add_command("runserver", Server(host="0.0.0.0", port=8080))
 
     return manager.run()
 

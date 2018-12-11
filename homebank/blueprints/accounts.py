@@ -1,4 +1,4 @@
-from flask.ext.login import login_required
+from flask_login import login_required
 
 from homebank.libraries.decorators import with_template
 from homebank.libraries.flask_ext import Blueprint, get_banking

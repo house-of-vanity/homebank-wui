@@ -1,5 +1,5 @@
 from flask import Blueprint as BaseBlueprint, current_app
-from flask.ext.login import UserMixin
+from flask_login import UserMixin
 
 from homebank.libraries.banking import Banking
 

@@ -59,7 +59,7 @@
             {% block pages %}{% endblock %}
         </div>
 
-        {% if current_user.is_authenticated() %}
+        {% if current_user.is_authenticated %}
         <!-- Bottom Toolbar-->
         <div class="toolbar tabbar tabbar-labels">
             <div class="toolbar-inner">
@@ -78,7 +78,8 @@
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="{{ url_for('static', filename='js/framework7.min.js') }}"></script>
+<!--<script src="{{ url_for('static', filename='js/framework7.min.js') }}"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/framework7/1.7.1/js/framework7.js></script>
 <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
 {% block js %}{% endblock %}

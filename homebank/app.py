@@ -1,7 +1,7 @@
 from logging import StreamHandler, WARNING, Formatter
 from logging.handlers import WatchedFileHandler
 from flask.app import Flask
-from flask.ext.login import LoginManager
+from flask_login import LoginManager
 from flask.templating import render_template
 from werkzeug.utils import import_string
 
@@ -13,16 +13,19 @@ def make_app(import_name=__name__,
              debug=False):
 
     app = Flask(import_name)
-    app.config.from_object(config)
+    try:
+      app.config.from_object(config)
+    except:
+      app.config.from_object('homebank.settings_example.Configuration')
     app.config.from_envvar('FLASK_SETTINGS', silent=True)
-    app.debug = debug
+    app.debug = False
     app.jinja_env.filters['currency'] = \
         lambda x: "{:,.2f} %s".format(x).replace(",", " ").replace(".", ",") % (
             app.config.get('CURRENCY', '')
         )
 
     if app.debug:
-        import_string('flask.ext.debugtoolbar:DebugToolbarExtension')(app)
+        import_string('flask_debugtoolbar:DebugToolbarExtension')(app)
 
     @app.errorhandler(404)
     def not_found(ex):
