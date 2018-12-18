@@ -23,7 +23,7 @@ additional = {}
 # debhelper setup FAKEROOTKEY variable
 if 'FAKEROOTKEY' not in environ:
     additional['entry_points'] = {'console_scripts': [
-        'homebank-cli = homebank.cli:manage'
+        'homebank-web = homebank.cli:manage'
     ]}
 
     requirements.extend(dev_requirements)
@@ -37,6 +37,9 @@ setup(
     url='https://github.com/rembish/homebank-wui',
     packages=find_packages(),
     include_package_data=True,
+    data_files=[
+        ('/usr/share/homebank/', ['data/sample.xhb']),
+    ],
     zip_safe=False,
     install_requires=requirements,
     **additional)

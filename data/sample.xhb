@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<homebank v="1.3" d="050202">
+<properties title="An0nym0us" curr="1" auto_smode="1" auto_weekday="1"/>
+<cur key="3" flags="0" iso="USD" name="US Dollar" symb="$" syprf="1" dchar="." gchar="," frac="2" rate="0.01502" mdate="737045"/>
+<cur key="4" flags="0" iso="JPY" name="Yen" symb="¥" syprf="1" dchar="." gchar="," frac="0" rate="1.7005999999999999" mdate="737045"/>
+<cur key="2" flags="0" iso="EUR" name="Euro" symb="€" syprf="1" dchar="," gchar=" " frac="2" rate="0.01324" mdate="737045"/>
+<cur key="1" flags="0" iso="RUB" name="Russian Ruble" symb="₽" syprf="1" dchar="," gchar=" " frac="2" rate="0" mdate="0"/>
+<account key="1" pos="1" type="4" curr="1" name="account 1" initial="3500" minimum="0"/>
+<account key="2" pos="2" type="2" curr="1" name="account 2" initial="750" minimum="0"/>
+<pay key="1" name="payee 1"/>
+<pay key="2" name="payee 2"/>
+<pay key="3" name="payee 3"/>
+<pay key="4" name="payee 4"/>
+<pay key="5" name="payee 5"/>
+<pay key="6" name="payee 6"/>
+<pay key="7" name="payee 7"/>
+<pay key="8" name="payee 8"/>
+<cat key="8" name="category 8"/>
+<cat key="13" parent="8" flags="1" name="category 13"/>
+<cat key="11" parent="8" flags="1" name="category 11"/>
+<cat key="10" parent="8" flags="1" name="category 10"/>
+<cat key="9" parent="8" flags="1" name="category 9"/>
+<cat key="14" name="category 14"/>
+<cat key="17" parent="14" flags="1" name="category 17"/>
+<cat key="16" parent="14" flags="1" name="category 16"/>
+<cat key="15" parent="14" flags="1" name="category 15"/>
+<cat key="30" name="category 30"/>
+<cat key="37" parent="30" flags="1" name="category 37"/>
+<cat key="34" parent="30" flags="1" name="category 34"/>
+<cat key="33" parent="30" flags="1" name="category 33"/>
+<cat key="32" parent="30" flags="1" name="category 32"/>
+<cat key="31" parent="30" flags="1" name="category 31"/>
+<cat key="41" name="category 41"/>
+<cat key="42" parent="41" flags="1" name="category 42"/>
+<cat key="48" name="category 48"/>
+<cat key="50" parent="48" flags="1" name="category 50"/>
+<cat key="49" parent="48" flags="1" name="category 49"/>
+<cat key="52" name="category 52"/>
+<cat key="58" parent="52" flags="1" name="category 58"/>
+<cat key="57" parent="52" flags="1" name="category 57"/>
+<cat key="56" parent="52" flags="1" name="category 56"/>
+<cat key="55" parent="52" flags="1" name="category 55"/>
+<cat key="62" parent="52" flags="1" name="category 62"/>
+<cat key="61" parent="52" flags="1" name="category 61"/>
+<cat key="71" name="category 71"/>
+<cat key="72" parent="71" flags="1" name="category 72"/>
+<cat key="74" parent="71" flags="1" name="category 74"/>
+<cat key="73" parent="71" flags="1" name="category 73"/>
+<cat key="75" name="category 75"/>
+<cat key="89" parent="75" flags="1" name="category 89"/>
+<cat key="81" parent="75" flags="1" name="category 81"/>
+<cat key="76" parent="75" flags="1" name="category 76"/>
+<cat key="84" parent="75" flags="1" name="category 84"/>
+<cat key="83" parent="75" flags="1" name="category 83"/>
+<cat key="90" name="category 90"/>
+<cat key="94" parent="90" flags="1" name="category 94"/>
+<cat key="101" name="category 101"/>
+<cat key="102" parent="101" flags="1" name="category 102"/>
+<cat key="103" parent="101" flags="1" name="category 103"/>
+<cat key="105" parent="101" flags="1" name="category 105"/>
+<cat key="104" parent="101" flags="1" name="category 104"/>
+<cat key="116" flags="2" name="category 116"/>
+<cat key="117" parent="116" flags="3" name="category 117"/>
+<cat key="123" flags="2" name="category 123"/>
+<cat key="128" parent="123" flags="3" name="category 128"/>
+<cat key="124" parent="123" flags="3" name="category 124"/>
+<asg key="1" flags="3072" field="1" name="assign 1" payee="1" category="72" paymode="6"/>
+<asg key="2" flags="14" name="assign 2" payee="2" category="117" paymode="6"/>
+<asg key="3" flags="14" name="assign 3" payee="2" category="84" paymode="6"/>
+<fav key="3" amount="-652" account="1" paymode="6" flags="4" payee="6" category="81" wording="archive 0" nextdate="737072" every="1" unit="2" limit="1"/>
+<fav key="1" amount="-260" account="1" paymode="7" st="3" flags="4" payee="3" category="83" wording="archive 1" nextdate="737049" every="1" unit="2" limit="1"/>
+<fav key="5" amount="0" account="1" paymode="6" payee="2" category="128" wording="archive 2" nextdate="737041" every="1" unit="2" limit="1"/>
+<fav key="4" amount="-160" account="1" paymode="6" flags="4" payee="3" category="10" wording="archive 3" nextdate="737071" every="1" unit="2" limit="1"/>
+<fav key="2" amount="0" account="1" paymode="6" category="72" wording="archive 4" nextdate="737039" every="1" unit="2" limit="1"/>
+<ope date="737040" amount="-400" account="2" paymode="3" st="2" category="52" wording="memo 737040"/>
+<ope date="737038" amount="-350" account="1" paymode="6" st="2" category="73" wording="memo 737038"/>
+<ope date="737038" amount="-211" account="1" paymode="6" st="2" payee="1" category="72" wording="memo 737038"/>
+<ope date="737038" amount="-430" account="1" paymode="6" st="2" payee="1" category="72" wording="memo 737038"/>
+<ope date="737038" amount="22100" account="1" paymode="6" st="2" flags="2" payee="2" category="117" wording="memo 737038"/>
+<ope date="737038" amount="26427" account="1" paymode="6" st="2" flags="2" payee="2" category="117" wording="memo 737038"/>
+<ope date="737039" amount="322" account="1" paymode="11" st="2" flags="2" payee="2" category="117" wording="memo 737039"/>
+<ope date="737039" amount="-3200" account="1" paymode="6" payee="2" category="84" wording="memo 737039"/>
+<ope date="737039" amount="-201" account="1" paymode="6" payee="1" category="72" wording="memo 737039"/>
+<ope date="737040" amount="-505" account="1" paymode="6" payee="4" category="72" wording="memo 737040"/>
+<ope date="737040" amount="1500" account="1" paymode="6" flags="2" payee="2" category="124" wording="memo 737040"/>
+<ope date="737040" amount="-1000" account="1" paymode="6" payee="2" category="13" wording="memo 737040"/>
+<ope date="737040" amount="-1806" account="1" paymode="6" payee="5" category="72" wording="memo 737040"/>
+<ope date="737040" amount="-160" account="1" paymode="6" payee="3" category="10" wording="memo 737040"/>
+<ope date="737041" amount="-652" account="1" paymode="6" payee="6" category="81" wording="memo 737041"/>
+<ope date="737041" amount="629" account="1" paymode="6" flags="2" payee="2" category="128" wording="memo 737041"/>
+<ope date="737041" amount="113" account="1" paymode="6" flags="2" payee="2" category="128" wording="memo 737041"/>
+<ope date="737041" amount="-582" account="1" paymode="6" category="72" wording="memo 737041"/>
+<ope date="737042" amount="-270" account="1" paymode="6" category="72" wording="memo 737042"/>
+<ope date="737042" amount="-379" account="1" paymode="6" category="55" wording="memo 737042"/>
+<ope date="737042" amount="-4063" account="1" paymode="6" payee="7" category="103" wording="memo 737042"/>
+<ope date="737042" amount="-391" account="1" paymode="6" payee="1" category="72" wording="memo 737042"/>
+<ope date="737043" amount="-437" account="1" paymode="6" payee="8" category="73" wording="memo 737043"/>
+<ope date="737043" amount="-909" account="1" paymode="6" category="55" wording="memo 737043"/>
+<ope date="737044" amount="-300" account="1" paymode="6" category="72" wording="memo 737044"/>
+</homebank>

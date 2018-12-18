@@ -1,0 +1,2 @@
+recursive-include homebank/templates *
+recursive-include homebank/static *
