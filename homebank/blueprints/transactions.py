@@ -11,5 +11,6 @@ root = Blueprint('transactions', __name__)
 @with_template
 @login_required
 def edit(id=None):
+    banking = get_banking()
     pass
 

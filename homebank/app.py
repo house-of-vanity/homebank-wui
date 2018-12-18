@@ -13,10 +13,7 @@ def make_app(import_name=__name__,
              debug=False):
 
     app = Flask(import_name)
-    try:
-      app.config.from_object(config)
-    except:
-      app.config.from_object('homebank.settings_example.Configuration')
+    app.config.from_object(config)
     app.config.from_envvar('FLASK_SETTINGS', silent=True)
     app.debug = False
     app.jinja_env.filters['currency'] = \
